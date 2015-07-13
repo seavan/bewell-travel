@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bewell</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" media="screen,projection" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="./css/ie7.css" />
+	<![endif]-->
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js" ></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="./js/es5-shim.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="./js/CSS.supports.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<!--popups-->
+	<div class="darkness"></div>
+	<div class="popup popup_map js-popup js-popup-map">
+		<div class="popup__table">
+			<div class="popup__table__cell">
+				<div class="popup__content">
+					<div class="popup__close js-popup-close" title="Закрыть">Закрыть</div>
+					<div class="popup__content__in b-content">
+						<h2>Курорт “Название курорта” на карте</h2>
+						<div class="on-map"><img src="./images/map2.png" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="popup popup_country js-popup js-popup-country">
+		<div class="popup__table">
+			<div class="popup__table__cell">
+				<div class="popup__content">
+					<div class="popup__close js-popup-close" title="Закрыть">Закрыть</div>
+					<div class="popup__content__in b-content">
+						<h2>Поиск курорта на карте мира</h2>
+						<form class="b-form b-form_country">
+							<div class="b-form_country__content">
+								<div class="b-form_country__content__col">
+									<div class="b-form_country__content__col__title">Выберите континент:</div>
+									<div class="b-form_country__content__col__in">
+										
+										<div class="b-form_country__map js-country-map">
+											<div data-land-id="1" class="js-country-map-item b-form_country__map__item b-form_country__map__item_1"></div>
+											<div data-land-id="2" class="js-country-map-item b-form_country__map__item b-form_country__map__item_2"></div>
+											<div data-land-id="3" class="js-country-map-item b-form_country__map__item b-form_country__map__item_3"></div>
+											<div data-land-id="4" class="js-country-map-item b-form_country__map__item b-form_country__map__item_4"></div>
+                                            <div data-land-id="5" class="js-country-map-item b-form_country__map__item b-form_country__map__item_5"></div>
+											
+											<img src="./i/pix.gif" width="460" height="295" border="0" usemap="#Map">
+											<map name="Map">
+												<area data-land-id="1" shape="poly" coords="55,40,60,36,65,32,70,21,82,14,98,7,114,7,124,1,149,1,154,10,165,10,178,9,190,16,193,33,191,43,188,54,183,62,166,74,157,79,140,86,138,95,137,112,120,120,98,132,102,150,98,162,94,168,79,182,68,174,52,160,39,149,31,123,33,103,30,93,23,78,8,75,3,73,2,40,10,29,23,27" href="#">
+
+												<area data-land-id="2" shape="poly" coords="179,163,191,146,192,131,189,118,196,107,209,104,225,107,230,115,235,133,243,141,256,146,269,155,285,160,286,174,289,189,278,221,263,230,252,240,238,243,225,232,221,209,212,190,187,177" href="#">
+
+												<area data-land-id="3" shape="poly" coords="195,106,187,102,192,84,208,76,219,67,226,56,236,51,243,58,248,68,260,64,272,59,280,47,291,36,308,27,326,24,337,29,354,24,364,17,378,17,384,23,402,22,414,22,433,24,440,29,434,39,425,47,422,61,422,77,409,93,410,102,416,116,413,126,407,137,395,146,393,157,395,167,390,179,388,192,382,201,357,204,345,183,335,172,321,178,302,170,296,159,284,159,268,152,257,142,242,138,232,121,230,109,219,102,198,106" href="#">
+
+												<area data-land-id="4" shape="poly" coords="370,223,382,212,394,200,409,185,427,188,430,204,438,215,440,237,446,245,454,248,457,253,455,273,450,285,434,290,419,276,408,270,396,254,387,247,370,249,368,233" href="#">
+                                                
+                                                <area data-land-id="5" shape="poly" coords="89,175,104,170,114,169,125,171,134,182,140,188,152,194,159,203,157,209,148,209,147,222,130,239,125,245,123,256,121,271,128,282,125,285,113,281,105,274,103,262,99,248,100,244,96,216,88,205,80,195,79,185" href="#">
+											</map>
+										</div>
+									</div>
+								</div>
+								<div class="b-form_country__content__col b-form_country__content__col_small">
+									<div class="b-form_country__content__col__title">Выберите страну:</div>
+									<div class="b-form_country__content__col__in b-form_country__content__col__in_scroll">
+										<ul class="b-country-list js-country-list-box">
+                                            <li data-land-id="1">
+                                                <a href="#" title="Северная америка">Северная америка</a>
+                                                <ul>
+                                                    <li><a href="#" title="Антигуа">Антигуа</a></li>
+                                                    <li><a href="#" title="Багамы">Багамы</a></li>
+                                                    <li><a href="#" title="Белиз">Белиз</a></li>
+                                                </ul>
+                                                
+                                            </li>
+                                            <li data-land-id="5">
+                                               	<a href="#" title="Южная америка">Южная америка</a>
+                                                <ul>
+                                                    <li><a href="#" title="Уругвай">Уругвай</a></li>
+                                                </ul>
+                                            </li>
+                                            <li data-land-id="2">
+                                                <a href="#" title="Африка">Африка</a>
+                                                <ul>
+                                                    <li><a href="#" title="Аруба">Аруба</a></li>
+                                                    <li><a href="#" title="Гренада">Гренада</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li data-land-id="3">
+                                                <a href="#" title="Евразия">Евразия</a>
+                                                <ul>
+                                                    <li><a href="#" title="Барбадос">Барбадос</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li data-land-id="4">
+                                                <a href="#" title="Австралия">Австралия</a>
+                                                <ul>
+                                                    <li><a href="#" title="Бермудские острова">Бермудские острова</a></li>
+                                                    <li data-land-id="4"><a href="#" title="Гаити">Гаити</a></li>
+                                                    <li data-land-id="4"><a href="#" title="Гондурас">Гондурас</a></li>
+                                                </ul>
+                                            </li>								
+                                            
+                                        </ul>
+									</div>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--/popups-->
+<!---->
+<div class="panel-top">
+	<div class="widthSite">
+		<!--авторизован-->
+		<div class="user-panel">
+			<div class="panel-top__item user-panel__name">Вы вошли как Константинопольский Константин</div>
+			<div class="panel-top__item user-panel__logout"><a href="#" class="user-panel__logout__link">Выйти</a></div>
+			<div class="panel-top__item user-panel__info">
+				<span class="user-panel__info__text">Последние просмотренные отели: «<a href="#">Ривьера</a>», «<a href="#">Неополетано</a>», «<a href="#">Кавказская пленница</a>»</span>
+			</div>
+		</div>
+		<!--авторизован-->
+	</div>
+</div>
+<!---->
+<div class="container">
+	<div class="container2">
+		<!---header-->
+		<div class="header">
+			<div class="b-head widthSite">
+				<a href="#" class="b-head__logo"><img src="./i/head_logo.png" alt="Bewell Medispa&wellnes" /></a>
+				<!---search-->
+				<form class="b-head__search">
+					<div class="b-head__search__table">
+						<div class="b-head__search__table__item title">поиск курорта</div>
+						<div class="b-head__search__table__item b-head__search__table__item_select">
+							<select class="b-head__search__select">
+								<option value="0">что болит?</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class="b-head__search__table__item b-head__search__table__item_select">
+							<select class="b-head__search__select">
+								<option value="0">где лечим?</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class="b-head__search__table__item b-head__search__table__item_button"><input type="submit" value="найти" class="button" /></div>
+					</div>
+				</form>
+				<!---/search-->
+				<!---search-site-->
+				<form class="b-head__search-site">
+					<input type="text" value="" placeholder="поиск по сайту" class="b-head__search-site__input" />
+					<input type="submit" value="Поиск" class="b-head__search-site__button" />
+				</form>
+				<!---/search-site-->
+				<ul class="b-head__menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Карта проезда</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="#" title="facebook">&#228;</a></li>
+					<li><a href="#" title="vkontakte">&#230;</a></li>
+					<li><a href="#" title="odnoklassniki">&#233;</a></li>
+					<li><a href="#" title="googleplus">&#232;</a></li>
+				</ul>
+				<ul class="b-head__links">
+					<li>8 (499) 215-35-35</li>
+					<li><a href="#">info@bewell-travel.ru</a></li>
+					<li class="b-head__links__map"><a href="#">карта сайта </a></li>
+				</ul>
+				<ul class="b-head__lang">
+					<li class="b-head__lang__active">рус</li>
+					<li><a href="#">eng</a></li>
+				</ul>
+			</div>
+		</div>
+		<!---/header-->
+		<!---middle-->
+		<div class="middle widthSite">
+			<ul class="b-path">
+				<li><a href="#">Главная</a></li>
+				<li>Результат поиска санаториев</li>
+			</ul>
+			<h1>результат поиска санаториев</h1>
+			<div class="b-middle clearFix">
+				<div class="b-middle__left fl_l">
+					<!---подобрать курорт-->
+					<form action="#" class="b-form b-form_left">
+						<dl>
+							<dt class="title">подобрать курорт</dt>
+							<dd>
+								<div class="b-form__map-door js-popup-country-door">
+									<div class="b-form__map-door__in"><span>Выбрать на карте мира</span></div>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Континент</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Страна</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Курорт</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Санаторий / Курортный отель</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Природные лечебные факторы</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Показания к лечению на курорте</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Контингент</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form__row">
+									<span class="b-form__label">Стоимость проживания, руб.</span>
+									<div class="b-form-scroll-block">
+										<div class="b-form-scroll-block__act" style="left: 0; width: 50%;"></div>
+										<div class="b-form-scroll-block__point b-form-scroll-block__point_left" style="left: 0"><span class="b-form-scroll-block__val">0</span></div>
+										<div class="b-form-scroll-block__point b-form-scroll-block__point_right" style="left: 50%"><span class="b-form-scroll-block__val">20 000</span></div>
+									</div>
+									<div class="b-form__row-line">
+										<span>от</span>
+										<input type="text" value="0 руб." class="b-form__field">
+									</div>
+									<div class="b-form__row-line">
+										<span>до</span>
+										<input type="text" value="20 000 руб." class="b-form__field">
+									</div>
+								</div>
+								<div class="b-form__button">
+									<input type="submit" value="подобрать" class="button">
+								</div>
+							</dd>
+						</dl>
+					</form>
+					<!---/подобрать курорт-->
+				</div>
+				<div class="b-middle__right fl_r">
+					<!---b-menu-middle-->
+					<div class="frame b-search-info">
+						 Найдено <span class="b-search-info__num">3</span> континента,  <a href="#" class="b-search-info__num">6</a> стран, <a href="#" class="b-search-info__num">47</a> курортов
+						 <span class="b-search-info__on-page">
+							 Выводить курортов на странице: 							
+							 <select class="b-search-info__on-page__select">
+								<option>8</option>
+								<option>10</option>
+							 </select>
+						 </span>
+					</div>
+					<!---/b-menu-middle-->
+					<!---поиск-->
+					<form action="#" class="b-form b-form_search js-slide-toggle">
+						<div class="b-form__row">
+							<div class="b-form_search__col b-form_search__col_w1">
+								<span class="b-form__label">Количество звезд</span>
+								<select class="b-form__field b-form__field_select">
+									<option>5</option>
+								</select>
+							</div>
+							<div class="b-form_search__col b-form_search__col_w2">
+								<span class="b-form__label">Цена, руб.</span>
+								<div class="b-form__row-line">
+									<span>от</span>
+									<input type="text" value="7 000" class="b-form__field">
+									<span>до</span>
+									<input type="text" value="20 000" class="b-form__field">
+								</div>
+							</div>
+							<div class="b-form_search__extended-door js-slide-toggle-door">
+								<span class="js-slide-toggle-door-text" data-change="Расширенный поиск">Свернуть</span>
+								<i class="b-arrow b-form_search__extended-door__arrow"></i>
+							</div>
+						</div>
+						<div class="b-form_search__extended js-slide-toggle-content">
+							<div class="b-form__row">
+								<div class="b-form_search__col">
+									<span class="b-form__label">Климатическая зона</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form_search__col">
+									<span class="b-form__label">Лечебные процедуры</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+								<div class="b-form_search__col">
+									<span class="b-form__label">Питание</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Все</option>
+									</select>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<div class="b-form_search__col">
+									<span class="b-form__label">Курортное лечение с детьми</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Выбрать</option>
+									</select>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w3">
+									<span class="b-form__label">Класс санатория\курортного отеля</span>
+									<select class="b-form__field b-form__field_select">
+										<option>Любой класс</option>
+									</select>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<span class="b-form__label">Спорт</span>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Теннис</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Скалолазание</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Футбол</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" checked=checked /><span>Стрельба из лука</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Фехтование</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Баскетбол</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Гиреметание</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Легкая атлетика</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Прогулки на природе</span></label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<span class="b-form__label">Сервис</span>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" checked=checked  /><span>Парковка</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Бассеин</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>SPA и массаж</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Сауна / баня</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Такси (24 часа)</span></label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<span class="b-form__label">Досуг</span>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" checked=checked  /><span>Прогулки на воздухе</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Дартс</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" checked=checked/><span>Ничегонеделание</span></label></li>
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" checked=checked /><span>Катамараны</span></label></li>
+									</ul>
+								</div>
+								<div class="b-form_search__col b-form_search__col_w4">
+									<ul class="b-form__list">
+										<li><label class="b-form__checkbox"><input type="checkbox" value="" /><span>Телевидение</span></label></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="b-form__button"><input type="submit" value="найти" class="button"></div>
+					</form>
+					<!---/поиск-->
+					<!---b-content-->
+					<div class="b-search-obj">
+						<!--item-->
+						<div class="b-search-obj__item">
+							<ul class="b-path">
+								<li><a href="#">Евразия</a></li>
+								<li><a href="#">Россия</a></li>
+								<li><a href="#">Уральский регион</a></li>
+								<li><a href="#">Курорт Рыбья запазуха</a></li>
+							</ul>
+							<div class="b-search-obj__item__head">
+								<h2>
+									<a href="#">Rogner Bad Blumau Hotel</a>
+									<span class="stars stars__5">5</span>
+								</h2>
+								<div class="b-search-obj__map-door js-popup-map-door"><span>Показать на карте</span></div>
+							</div>
+							<!---->
+							<div class="b-search-obj__item__in">
+								<div class="b-search-obj__item__in__img"><img src="./images/pic9.jpg" alt="" /></div>
+								<div class="b-search-obj__item__in__content">
+									<dl class="b-search-obj__info">
+										<dt class="title">описание</dt>
+										<dd>
+											Предпочитаете останавливаться в пятизвездочных гостиницах в центре Москвы? В таком случае отель «Ronger bad» - именно то, что Вам нужно! Мы позаботились обо всем, чтобы Вы могли по-настоящему открыть и полюбить столицу. К вашим услугам роскошный трансфер на BMW, персональный шопинг-гид, уроки гольфа, лучшие рестораны, шикарные номера и многое другое. Среди пятизвездочных гостиниц в центре Москвы «Ronger bad» занимает почетное место.
+										</dd>
+										<dt class="title">цена</dt>
+										<dd class="b-price">
+											<span class="b-price__num">22 090</span> руб. 
+											<span class="b-price__inf">(стоимость проживания с лечением в двухместном стандартном номере)</span>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--/-->
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="b-search-obj__item">
+							<ul class="b-path">
+								<li><a href="#">Евразия</a></li>
+								<li><a href="#">Россия</a></li>
+								<li><a href="#">Уральский регион</a></li>
+								<li><a href="#">Курорт Рыбья запазуха</a></li>
+							</ul>
+							<div class="b-search-obj__item__head">
+								<h2>
+									<a href="#">Rogner Bad Blumau Hotel</a>
+									<span class="stars stars__3">3</span>
+								</h2>
+								<div class="b-search-obj__map-door js-popup-map-door"><span>Показать на карте</span></div>
+							</div>
+							<!---->
+							<div class="b-search-obj__item__in">
+								<div class="b-search-obj__item__in__img"><img src="./images/pic9.jpg" alt="" /></div>
+								<div class="b-search-obj__item__in__content">
+									<dl class="b-search-obj__info">
+										<dt class="title">описание</dt>
+										<dd>
+											Предпочитаете останавливаться в пятизвездочных гостиницах в центре Москвы? В таком случае отель «Ronger bad» - именно то, что Вам нужно! Мы позаботились обо всем, чтобы Вы могли по-настоящему открыть и полюбить столицу. К вашим услугам роскошный трансфер на BMW, персональный шопинг-гид, уроки гольфа, лучшие рестораны, шикарные номера и многое другое. Среди пятизвездочных гостиниц в центре Москвы «Ronger bad» занимает почетное место.
+										</dd>
+										<dt class="title">цена</dt>
+										<dd class="b-price">
+											<span class="b-price__num">7 239</span> руб. 
+											<span class="b-price__inf">(стоимость проживания с лечением в двухместном стандартном номере)</span>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<!--/-->
+						</div>
+						<!--/item-->
+					</div>
+					<!---/b-content-->
+					<!--pager-->
+					<ul class="b-pager">
+						<li class="b-pager__prev"><a href="#"><i class="b-arrow b-pager__arrow"></i>Предыдущая страница</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><span>9</span></li>
+						<li><a href="#">10</a></li>
+						<li><a href="#">11</a></li>
+						<li><a href="#">12</a></li>
+						<li class="b-pager__next"><a href="#"><i class="b-arrow b-pager__arrow"></i>Следующая страница</a></li>
+					</ul>
+					<!--/pager-->
+				</div>
+			</div>
+		</div>
+		<!---/middle-->
+	</div>
+</div>
+<!---footer-->
+<div class="footer">
+	<!---->
+	<div class="b-map js-slide-toggle">
+		<div class="b-map__door">
+			<div class="widthSite">
+				<span class="b-map__door__in js-slide-toggle-door">
+					<i class="b-arrow b-map__door__arrow"></i>
+					<span>карта сайта</span>
+				</span>
+			</div>
+		</div>
+		<div class="b-map__content js-slide-toggle-content">
+			<div class="b-map__content__bottom">
+				<div class="widthSite">
+					<!--b-map__content-->
+					<div class="b-map__content__in clearFix">
+						<div class="b-map__content__col fl_l">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">О курортах</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Что такое курорт</a></li>
+										<li><a href="#">Спа</a></li>
+										<li><a href="#">Велнес</a></li>
+										<li><a href="#">Какие бывают курорты</a></li>
+										<li><a href="#">Курорт у вас дома</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Курорты</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Страны</a></li>
+										<li><a href="#">Регионы</a></li>
+										<li><a href="#">Курорты</a></li>
+										<li><a href="#">Отели /санатории</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Медицинский туризм</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Check-up</a></li>
+										<li><a href="#">Ангиология </a></li>
+										<li><a href="#">Кардиология</a></li>
+										<li><a href="#">Травматология</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Медицина туризма</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Check-up</a></li>
+										<li><a href="#">Ангиология </a></li>
+										<li><a href="#">Кардиология</a></li>
+										<li><a href="#">Травматология</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="b-map__content__col b-map__content__col_center fl_l">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Природа лечит</a></dt>
+								<dd class="clearFix">
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Климатотерапия</a></li>
+											<li><a href="#">Аэротерапия</a></li>
+											<li><a href="#">Гелиотерапия</a></li>
+											<li><a href="#">Спелеотерапия, лечебные климатические камеры</a></li>
+											<li><a href="#">Ландшафтотерапия, влияние ландшафта на человека</a></li>
+											<li><a href="#">Терренкур </a></li>
+											<li><a href="#">Талассотерапия </a></li>
+											<li><a href="#">Талассотерапия в Греции</a></li>
+											<li><a href="#">Талассотерапия в Англии</a></li>
+											<li><a href="#">Кумыс, кумысолечение</a></li>
+											<li><a href="#">Лечебные грязи</a></li>
+											<li><a href="#">Минеральные воды</a></li>
+											<li><a href="#">Питьевые воды</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Бальнеотерапия</a></li>
+											<li><a href="#">Гидротерапия</a></li>
+											<li><a href="#">Физиотерапия</a></li>
+											<li><a href="#">Массаж</a></li>
+											<li><a href="#">Классический массаж </a></li>
+											<li><a href="#">Спортивный массаж</a></li>
+											<li><a href="#">Лимфодренажный массаж</a></li>
+											<li><a href="#">Мануальная терапия </a></li>
+											<li><a href="#">Остеопатия</a></li>
+											<li><a href="#">Китайская медицина: иглоукалывание, рефлексотерапия </a></li>
+											<li><a href="#">Гирудотерапия</a></li>
+											<li><a href="#">Ароматерапия, аэрофитотерапия</a></li>
+											<li><a href="#">Фитотерапия, лечение травами</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Термотерапия, парафинотерапия, озокеритотерапия </a></li>
+											<li><a href="#">Баня, сауна, хамам</a></li>
+											<li><a href="#">Русская баня</a></li>
+											<li><a href="#">Сауна</a></li>
+											<li><a href="#">Хамам</a></li>
+											<li><a href="#">Лечебное питание, диеты по Певзнеру</a></li> 
+											<li><a href="#">стол №1</a></li>
+											<li><a href="#">стол №2</a></li>
+											<li><a href="#">Стол №15 (всего ~20 столов)</a></li>
+											<li><a href="#">ЛФК (Лечебная физическая культура)</a></li>
+											<li><a href="#">Механотерапия</a></li>
+											<li><a href="#">Иппотерапия</a></li>
+											<li><a href="#">Аюрведа</a></li>
+											<li><a href="#">Детокс, очищение</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_r">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">ЭРЛ, «очищение по левину» </a></li>
+											<li><a href="#">Озонотерапия</a></li>
+											<li><a href="#">Инновационные технологии курортной медицины</a></li>
+											<li><a href="#">Гипербарическая оксигенация в санаториях России</a></li>
+											<li><a href="#">Нормобарическая гипокситерапия — «Горный воздух» в санаториях России</a></li>
+											<li><a href="#">Криотерапия в санаториях России</a></li>
+											<li><a href="#">Озонотерапия в санаториях России</a></li>
+											<li><a href="#">Диализные центры в санаториях России и на курортах мира</a></li>
+											<li><a href="#">Эндоскопическая хирургия в санаториях России</a></li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<div class="b-important b-map__content__info">Наш сайт создан <i>исключительно для информации</i> и не может заменить личной консультации врача.</div>
+						</div>
+						<div class="b-map__content__col fl_r">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Что лечат на курортах</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Системы кровообращения</a></li>
+										<li><a href="#">Органы пищеварения</a></li>
+										<li><a href="#">Органы дыхания</a></li>
+										<li><a href="#">Костно-мышечная система</a></li>
+										<li><a href="#">Нервная система</a></li>
+										<li><a href="#">Болезни кожи</a></li>
+										<li><a href="#">Гинекология</a></li>
+										<li><a href="#">Урология</a></li>
+										<li><a href="#">Эндокринная системы</a></li>
+										<li><a href="#">Болезни крови</a></li>
+										<li><a href="#">Глазные болезни</a></li>
+										<li><a href="#">Онкология</a></li>
+										<li><a href="#">Оздоровление беременных</a></li>
+										<li><a href="#">Лечение в санатории детей</a></li>
+										<li><a href="#">Снижения веса и коррекция фигуры</a></li>
+										<li><a href="#">Косметология</a></li>
+										<li><a href="#">Стоматологический туризм </a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!--/b-map__content-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/-->
+	<div class="b-foot">
+		<div class="widthSite">
+			<div class="b-foot__copy">
+				<p class="footer__select__text">&copy;&nbsp;Bewell 2013</p>
+				<p>Все права на материалы, размещенные на сайте, охраняются в соответствии с законодательством РФ и международным правом, в том числе, об авторском праве и смежных правах.</p>
+			</div>
+			<div class="b-foot__contact">
+				<div class="b-foot__contact__item">звоните<br /><span class="footer__select__text">8 (495) 123 45 67</span></div>
+				<div class="b-foot__contact__item">пишите<br /><a href="mailto:info@bewell-travel.ru">info@bewell-travel.ru</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---/footer-->
+</body>
+</html>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

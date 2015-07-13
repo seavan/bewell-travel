@@ -1,0 +1,1 @@
+drop table `static_pages`;

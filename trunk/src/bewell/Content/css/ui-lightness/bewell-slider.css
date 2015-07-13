@@ -1,0 +1,63 @@
+﻿.ui-slider
+{
+    height: 15px;
+}
+#slider-wrapper
+{
+    position: relative;
+    margin: 25px 0;
+}
+.slider-tooltip
+{
+    position: absolute;
+    font: 11px Arial;
+    color: #6e6e6e;
+    text-align: center;
+}
+#tooltip-from
+{
+    top: -22px;
+}
+#tooltip-to
+{
+    top: 15px;
+    right: 0;
+}
+.ui-slider .ui-slider-handle
+{
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 26px;
+    cursor: default;
+}
+.ui-widget-content
+{
+    border: none;
+    background: url('/Content/i/filtrScrollBg.png') no-repeat 0 3px;
+}
+.ui-slider-horizontal .ui-slider-handle
+{
+    top: -6px;
+}
+.ui-slider-handle-1, .ui-slider-handle-2
+{
+    border: none !important;
+}
+.ui-slider-handle-1
+{
+    background: url('/Content/i/filtrScrollPointLeft.png') no-repeat 0 0 !important;
+}
+.ui-slider-handle-2
+{
+    background: url('/Content/i/filtrScrollPointRight.png') no-repeat 0 0 !important;
+}
+.ui-state-focus
+{
+    border: none !important;
+}
+.ui-widget-header
+{
+    background: url('/Content/i/filtrScrollBgAct.png') repeat-x 0 0px;
+    top: 3px !important;
+}

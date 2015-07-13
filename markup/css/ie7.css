@@ -1,0 +1,86 @@
+.b-head__lang li { display: inline; zoom: 1; }
+
+.b-head__search__table { display: block; zoom: 1; }
+.b-head__search__table__item { display: block; float: left; }
+.b-head__search__table__item_button { float: right; }
+.b-head__search__table__item_select { width: 223px; }
+.b-head__search__table__item.title { padding-top: 6px; }
+
+.b-head__search-site__input { width: 194px; }
+.b-info__consultant__form input { width: 90%; }
+
+.b-info__faq__lenta { position: relative; width: 10000px; zoom: 1;  }
+.b-info__faq__lenta__item { display: block; float: left; width: 480px; }
+
+.b-map__door__arrow { vertical-align: 4px; }
+
+.b-info__news__rss { vertical-align: 0; }
+
+.b-content ol { list-style: decimal outside; }
+
+.popup { top: 200px; }
+
+.b-form__field { width: 91%; }
+.b-form__checkbox { position: relative; display: inline-block; cursor:pointer; color: #919190; }
+.b-form__checkbox input[type=checkbox] { position: absolute; top: -1px; left: 0; margin: 0; padding: 0; }
+
+.b-form_left .b-form__row-calendar .b-form__field, 
+.b-form_left .b-form__row-line .b-form__field { width: 156px; }
+
+.panel-top__item,
+.social li,
+.b-illness__tabs-sex li,
+.b-illness__frame__tabs li,
+.b-menu-middle__list li,
+.b-f-gallery__preview__item,
+.b-comment__list__text__in,
+.b-form_search-acticle__item,
+.b-menu-middle_short { display: inline; zoom: 1; }
+
+.b-photo-lenta__lenta span { display: inline-block; }
+
+.b-form_login .b-form__field { width: 200px; }
+.b-form_login__button .button { display: inline-block; vertical-align: middle; }
+.b-form_login__button .b-form__checkbox { vertical-align: middle; }
+
+.b-search-obj__item { position: static; }
+.b-search-obj__item__in { display: block; zoom: 1; }
+.b-search-obj__item__in__img { float: left; }
+.b-search-obj__item__in__content { float: right; width: 540px; }
+
+.b-price__num { line-height: 25px; }
+
+.b-search-obj__weather { display: inline;  z-index: 10; }
+
+.b-form_country { padding: 0 30px; }
+.b-form_country .b-form__button { margin: 0 -30px; }
+.b-form_country__content { zoom: 1; }
+.b-form_country__content__col { float: left; padding: 0; }
+.b-form_country__content__col_small { float: right; }
+
+.b-menu-middle__list .b-active div { position: static; }
+
+.b-f-gallery__link__arrow, 
+.b-f-gallery__link.b-close .b-f-gallery__link__arrow { vertical-align: 5px; }
+
+.b-article-list__item__door .b-article-list__item__arrow { vertical-align: 3px; }
+.b-article-list .b-active > .b-article-list__item__arrow { vertical-align: 6px; }
+
+.b-form_search__extended-door__arrow { vertical-align: 7px; }
+.b-form_search__extended-door.b-close .b-form_search__extended-door__arrow { vertical-align: 4px; }
+
+.b-map__door__arrow { vertical-align: 7px; }
+.b-map__door__in.b-close .b-map__door__arrow { vertical-align: 4px; }
+
+.b-comment__list__text.b-active .b-comment__list__text__in { max-height: none; }
+
+.b-search-acticle-res { zoom: 1; }
+.b-search-acticle-res__col:first-child { float: left; }
+.b-search-acticle-res__col { float: right; }
+
+.b-form_search-acticle__item .b-form__field { width: 400px; }
+
+.b-content__form__in { zoom: 1; }
+.b-content__form__col { float: left; }
+
+.b-content__form .b-form__row-calendar .b-form__field { width: 182px; }

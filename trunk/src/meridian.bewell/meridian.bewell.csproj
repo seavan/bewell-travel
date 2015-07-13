@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{060F8288-A74C-4811-97BD-BC8A0736E8AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>meridian.bewell</RootNamespace>
+    <AssemblyName>meridian.bewell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CuttingEdge.Conditions, Version=1.2.0.11174, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\etc\lib\footboy\CuttingEdge.Conditions.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\etc\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageResizer">
+      <HintPath>..\..\etc\packages\ImageResizer.3.4.2\lib\ImageResizer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\etc\lib\meridian\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="meridian.core">
+      <HintPath>..\..\etc\lib\meridian\meridian.core.dll</HintPath>
+    </Reference>
+    <Reference Include="meridian.diagram">
+      <HintPath>..\..\etc\lib\meridian\meridian.diagram.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\etc\lib\meridian\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sphinx.Client">
+      <HintPath>..\..\etc\lib\Sphinx.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\BaseMeridianController.cs" />
+    <Compile Include="controller\meridian_comments.cs" />
+    <Compile Include="controller\meridian_changelog.cs" />
+    <Compile Include="controller\meridian_citations.cs" />
+    <Compile Include="controller\meridian_countries.cs" />
+    <Compile Include="controller\meridian_cure_profiles.cs" />
+    <Compile Include="controller\meridian_deseases.cs" />
+    <Compile Include="controller\meridian_dictionary.cs" />
+    <Compile Include="controller\meridian_entity_fields.cs" />
+    <Compile Include="controller\meridian_entity_photos.cs" />
+    <Compile Include="controller\meridian_fieldsets.cs" />
+    <Compile Include="controller\meridian_fieldset_fields_order.cs" />
+    <Compile Include="controller\meridian_field_values.cs" />
+    <Compile Include="controller\meridian_genders.cs" />
+    <Compile Include="controller\meridian_health_factors.cs" />
+    <Compile Include="controller\meridian_hotels.cs" />
+    <Compile Include="controller\meridian_hotel_classes.cs" />
+    <Compile Include="controller\meridian_news.cs" />
+    <Compile Include="controller\meridian_news_categories.cs" />
+    <Compile Include="controller\meridian_pages.cs" />
+    <Compile Include="controller\meridian_pages_files.cs" />
+    <Compile Include="controller\meridian_prices.cs" />
+    <Compile Include="controller\meridian_properties.cs" />
+    <Compile Include="controller\meridian_property_categories.cs" />
+    <Compile Include="controller\meridian_questions.cs" />
+    <Compile Include="controller\meridian_regions.cs" />
+    <Compile Include="controller\meridian_resorts.cs" />
+    <Compile Include="controller\meridian_resort_zones.cs" />
+    <Compile Include="controller\meridian_seo_metadata.cs" />
+    <Compile Include="controller\meridian_territories.cs" />
+    <Compile Include="controller\meridian_territory_categories.cs" />
+    <Compile Include="controller\meridian_treatment_options.cs" />
+    <Compile Include="impl\accounts.cs" />
+    <Compile Include="impl\accountsStore.cs" />
+    <Compile Include="impl\Aspects\Aspect.cs" />
+    <Compile Include="impl\Aspects\ResortsAdditionalProfilesAspect.cs" />
+    <Compile Include="impl\Aspects\DictionaryAspect.cs" />
+    <Compile Include="impl\Aspects\EntityFieldsFieldsetsAspect.cs" />
+    <Compile Include="impl\Aspects\HotelDeseasesAspect.cs" />
+    <Compile Include="impl\Aspects\HotelPhotosAspect.cs" />
+    <Compile Include="impl\Aspects\HotelPropertiesAspect.cs" />
+    <Compile Include="impl\Aspects\HotelsPriceAspect.cs" />
+    <Compile Include="impl\Aspects\HotelTreatmentsAspect.cs" />
+    <Compile Include="impl\Aspects\LookupAspect.cs" />
+    <Compile Include="impl\Aspects\OneToManyAspect.cs" />
+    <Compile Include="impl\Aspects\PriceTableAspect.cs" />
+    <Compile Include="impl\Aspects\RegionsHealthFactorsAspect.cs" />
+    <Compile Include="impl\Aspects\ResortPhotosAspect.cs" />
+    <Compile Include="impl\Aspects\ResortsHealthFactorsAspect.cs" />
+    <Compile Include="impl\Aspects\ResortsMainProfilesAspect.cs" />
+    <Compile Include="impl\Aspects\EntityFieldsetAspect.cs" />
+    <Compile Include="impl\Aspects\EntitySeoMetadataAspect.cs" />
+    <Compile Include="impl\changelog.cs" />
+    <Compile Include="impl\citiationsStore.cs" />
+    <Compile Include="impl\Classes\BaseEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Classes\FieldInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Classes\FieldSetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Classes\GalleryPhotos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Classes\LinkInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Classes\MenuLinks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\comments.cs" />
+    <Compile Include="impl\commentsStore.cs" />
+    <Compile Include="impl\countries.cs" />
+    <Compile Include="impl\deseases.cs" />
+    <Compile Include="impl\dictionary.cs" />
+    <Compile Include="impl\entity_fields.cs" />
+    <Compile Include="impl\entity_photos.cs" />
+    <Compile Include="impl\cure_profiles.cs" />
+    <Compile Include="impl\entity_photosStore.cs" />
+    <Compile Include="impl\fieldsets.cs" />
+    <Compile Include="impl\fieldsetsStore.cs" />
+    <Compile Include="impl\field_values.cs" />
+    <Compile Include="impl\genders.cs" />
+    <Compile Include="impl\health_factors.cs" />
+    <Compile Include="impl\hotels.cs" />
+    <Compile Include="impl\hotel_classes.cs" />
+    <Compile Include="impl\Images\AbstractImageMarkupProcessor.cs" />
+    <Compile Include="impl\Images\HtmlDomTransformer.cs" />
+    <Compile Include="impl\Images\HtmlMarkupHelper.cs" />
+    <Compile Include="impl\Images\IMarkupProcessor.cs" />
+    <Compile Include="impl\Images\NewsImageMarkupProcessor.cs" />
+    <Compile Include="impl\Images\NewsImageMarkupProcessorSettings.cs" />
+    <Compile Include="impl\Images\ThumbnailGenerator.cs" />
+    <Compile Include="impl\Interfaces\IAspect.cs" />
+    <Compile Include="impl\Interfaces\IAttachedPhoto.cs" />
+    <Compile Include="impl\Interfaces\IAttachedPhotoAspect.cs" />
+    <Compile Include="impl\Interfaces\IBreadCrumbsProvider.cs" />
+    <Compile Include="impl\Interfaces\IComment.cs" />
+    <Compile Include="impl\Interfaces\IDictionaryCategory.cs" />
+    <Compile Include="impl\Interfaces\IDictionaryValue.cs" />
+    <Compile Include="impl\Interfaces\IDictionaryValuesAspect.cs" />
+    <Compile Include="impl\Interfaces\IDictionaryValuesAspectProvider.cs" />
+    <Compile Include="impl\Interfaces\IFavorite.cs" />
+    <Compile Include="impl\Interfaces\IFieldsetAspect.cs" />
+    <Compile Include="impl\Interfaces\IGeoLocation.cs" />
+    <Compile Include="impl\Interfaces\IGeolocationAware.cs" />
+    <Compile Include="impl\Interfaces\IImageByTheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Interfaces\IImageByThemeComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="impl\Interfaces\ILookupValue.cs" />
+    <Compile Include="impl\Interfaces\ILookupValueAspect.cs" />
+    <Compile Include="impl\Interfaces\IMainSlider.cs" />
+    <Compile Include="impl\Interfaces\IMark.cs" />
+    <Compile Include="impl\Interfaces\IMarkable.cs" />
+    <Compile Include="impl\Interfaces\IMarkableMaterial.cs" />
+    <Compile Include="impl\Interfaces\INavigateableItem.cs" />
+    <Compile Include="impl\Interfaces\IOneToManyAspect.cs" />
+    <Compile Include="impl\Interfaces\IPopularityMaterial.cs" />
+    <Compile Include="impl\Interfaces\IPriceTable.cs" />
+    <Compile Include="impl\Interfaces\IPriceTableAspect.cs" />
+    <Compile Include="impl\Interfaces\IScheduleAspect.cs" />
+    <Compile Include="impl\Interfaces\ISeoMetadata.cs" />
+    <Compile Include="impl\Interfaces\ISeoMetadataAspect.cs" />
+    <Compile Include="impl\Interfaces\IValueListAspect.cs" />
+    <Compile Include="impl\Interfaces\IValueListAspectProvider.cs" />
+    <Compile Include="impl\Interfaces\IValueListItem.cs" />
+    <Compile Include="impl\Interfaces\IViewableMaterial.cs" />
+    <Compile Include="impl\Interfaces\NavigateableItemDummy.cs" />
+    <Compile Include="impl\Meridian.cs" />
+    <Compile Include="impl\news.cs" />
+    <Compile Include="impl\newsStore.cs" />
+    <Compile Include="impl\news_categories.cs" />
+    <Compile Include="impl\pages.cs" />
+    <Compile Include="impl\pagesStore.cs" />
+    <Compile Include="impl\prices.cs" />
+    <Compile Include="impl\properties.cs" />
+    <Compile Include="impl\property_categories.cs" />
+    <Compile Include="impl\questions.cs" />
+    <Compile Include="impl\regions.cs" />
+    <Compile Include="impl\resorts.cs" />
+    <Compile Include="impl\resort_zones.cs" />
+    <Compile Include="impl\territories.cs" />
+    <Compile Include="impl\territoriesStore.cs" />
+    <Compile Include="impl\territory_categories.cs" />
+    <Compile Include="impl\treatment_options.cs" />
+    <Compile Include="meta_impl\accounts.meta.cs" />
+    <Compile Include="meta_impl\accounts_sna.meta.cs" />
+    <Compile Include="meta_impl\changelog.meta.cs" />
+    <Compile Include="meta_impl\citations.meta.cs" />
+    <Compile Include="meta_impl\comments.meta.cs" />
+    <Compile Include="meta_impl\countries.meta.cs" />
+    <Compile Include="meta_impl\cure_profiles.meta.cs" />
+    <Compile Include="meta_impl\deseases.meta.cs" />
+    <Compile Include="meta_impl\dictionary.meta.cs" />
+    <Compile Include="meta_impl\entity_fields.meta.cs" />
+    <Compile Include="meta_impl\entity_photos.meta.cs" />
+    <Compile Include="meta_impl\fieldsets.meta.cs" />
+    <Compile Include="meta_impl\fieldset_fields_order.meta.cs" />
+    <Compile Include="meta_impl\field_values.meta.cs" />
+    <Compile Include="meta_impl\genders.meta.cs" />
+    <Compile Include="meta_impl\health_factors.meta.cs" />
+    <Compile Include="meta_impl\hotels.meta.cs" />
+    <Compile Include="meta_impl\hotel_classes.meta.cs" />
+    <Compile Include="meta_impl\news.meta.cs" />
+    <Compile Include="meta_impl\news_categories.meta.cs" />
+    <Compile Include="meta_impl\pages.meta.cs" />
+    <Compile Include="meta_impl\pages_files.meta.cs" />
+    <Compile Include="meta_impl\prices.meta.cs" />
+    <Compile Include="meta_impl\properties.meta.cs" />
+    <Compile Include="meta_impl\property_categories.meta.cs" />
+    <Compile Include="meta_impl\questions.meta.cs" />
+    <Compile Include="meta_impl\regions.meta.cs" />
+    <Compile Include="meta_impl\resorts.meta.cs" />
+    <Compile Include="meta_impl\resort_zones.meta.cs" />
+    <Compile Include="meta_impl\seo_metadata.meta.cs" />
+    <Compile Include="meta_impl\territories.meta.cs" />
+    <Compile Include="meta_impl\territory_categories.meta.cs" />
+    <Compile Include="meta_impl\treatment_options.meta.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="protoStore\accountsStore.cs" />
+    <Compile Include="protoStore\accounts_snaStore.cs" />
+    <Compile Include="protoStore\changelogStore.cs" />
+    <Compile Include="protoStore\citationsStore.cs" />
+    <Compile Include="protoStore\commentsStore.cs" />
+    <Compile Include="protoStore\countriesStore.cs" />
+    <Compile Include="protoStore\cure_profilesStore.cs" />
+    <Compile Include="protoStore\deseasesStore.cs" />
+    <Compile Include="protoStore\dictionaryStore.cs" />
+    <Compile Include="protoStore\entity_fieldsStore.cs" />
+    <Compile Include="protoStore\entity_photosStore.cs" />
+    <Compile Include="protoStore\fieldsetsStore.cs" />
+    <Compile Include="protoStore\fieldset_fields_orderStore.cs" />
+    <Compile Include="protoStore\field_valuesStore.cs" />
+    <Compile Include="protoStore\gendersStore.cs" />
+    <Compile Include="protoStore\health_factorsStore.cs" />
+    <Compile Include="protoStore\hotelsStore.cs" />
+    <Compile Include="protoStore\hotel_classesStore.cs" />
+    <Compile Include="protoStore\newsStore.cs" />
+    <Compile Include="protoStore\news_categoriesStore.cs" />
+    <Compile Include="protoStore\pagesStore.cs" />
+    <Compile Include="protoStore\pages_filesStore.cs" />
+    <Compile Include="protoStore\pricesStore.cs" />
+    <Compile Include="protoStore\propertiesStore.cs" />
+    <Compile Include="protoStore\property_categoriesStore.cs" />
+    <Compile Include="protoStore\questionsStore.cs" />
+    <Compile Include="protoStore\regionsStore.cs" />
+    <Compile Include="protoStore\resortsStore.cs" />
+    <Compile Include="protoStore\resort_zonesStore.cs" />
+    <Compile Include="protoStore\seo_metadataStore.cs" />
+    <Compile Include="protoStore\territoriesStore.cs" />
+    <Compile Include="protoStore\territory_categoriesStore.cs" />
+    <Compile Include="protoStore\treatment_optionsStore.cs" />
+    <Compile Include="proto\accounts.cs" />
+    <Compile Include="proto\accounts_sna.cs" />
+    <Compile Include="proto\changelog.cs" />
+    <Compile Include="proto\citations.cs" />
+    <Compile Include="proto\comments.cs" />
+    <Compile Include="proto\countries.cs" />
+    <Compile Include="proto\cure_profiles.cs" />
+    <Compile Include="proto\deseases.cs" />
+    <Compile Include="proto\dictionary.cs" />
+    <Compile Include="proto\entity_fields.cs" />
+    <Compile Include="proto\entity_photos.cs" />
+    <Compile Include="proto\fieldsets.cs" />
+    <Compile Include="proto\fieldset_fields_order.cs" />
+    <Compile Include="proto\field_values.cs" />
+    <Compile Include="proto\genders.cs" />
+    <Compile Include="proto\health_factors.cs" />
+    <Compile Include="proto\hotels.cs" />
+    <Compile Include="proto\hotel_classes.cs" />
+    <Compile Include="proto\news.cs" />
+    <Compile Include="proto\news_categories.cs" />
+    <Compile Include="proto\pages.cs" />
+    <Compile Include="proto\pages_files.cs" />
+    <Compile Include="proto\prices.cs" />
+    <Compile Include="proto\properties.cs" />
+    <Compile Include="proto\property_categories.cs" />
+    <Compile Include="proto\questions.cs" />
+    <Compile Include="proto\regions.cs" />
+    <Compile Include="proto\resorts.cs" />
+    <Compile Include="proto\resort_zones.cs" />
+    <Compile Include="proto\seo_metadata.cs" />
+    <Compile Include="proto\territories.cs" />
+    <Compile Include="proto\territory_categories.cs" />
+    <Compile Include="proto\treatment_options.cs" />
+    <Compile Include="system\IMeridianMonitorSender.cs" />
+    <Compile Include="system\Meridian.common.cs" />
+    <Compile Include="system\Meridian.cs" />
+    <Compile Include="system\MeridianMonitor.cs" />
+    <Compile Include="system\MeridianUpdate.cs" />
+    <Compile Include="system\ReceiverThreadWorker.cs" />
+    <Compile Include="system\SenderThreadWorker.cs" />
+    <Compile Include="system\ThreadWorker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controller_impl\" />
+    <Folder Include="impl\Video\" />
+    <Folder Include="view\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\admin.db\admin.db.csproj">
+      <Project>{60595A5D-561C-4B8D-A224-D3A1760D7714}</Project>
+      <Name>admin.db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\admin.web.common\admin.web.common.csproj">
+      <Project>{5FF2B73F-DE90-4BEF-B828-A2E61C191E16}</Project>
+      <Name>admin.web.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bewell.common\bewell.common.csproj">
+      <Project>{6977B09E-2DB5-4B25-9FB9-1F5A05EDE16A}</Project>
+      <Name>bewell.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

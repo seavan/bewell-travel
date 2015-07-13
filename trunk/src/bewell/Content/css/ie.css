@@ -1,0 +1,24 @@
+@font-face{
+ font-family: "Scada-Regular";
+ src: url('../fonts/Scada-Regular.eot');
+}
+
+@font-face {
+ font-family: 'Scada-Bold';
+ src: url('../fonts/Scada-Bold.eot');
+}
+
+@font-face{
+ font-family: "websymbolsligaregular";
+  src: url('../fonts/websymbolsligaregular.eot');
+}
+
+.button { min-height: 18px; }
+
+
+.b-form__checkbox input[type=checkbox] { clip: auto; }
+.b-form__checkbox > span:after { display: none; }
+
+.darkness { background: #240a21; filter: alpha(opacity=60); }
+
+.b-illness__frame__tabs-in__scroll { position: relative; }

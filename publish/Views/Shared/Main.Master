@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <% Html.RenderAction("Metadata", "Home"); %>
+	<link rel="stylesheet" type="text/css" href="/Content/css/main.css" media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="/Content/css/dev.css" media="screen,projection" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="/Content/css/ie.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/Content/css/ie7.css" />
+	<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    <script type="text/javascript" src="/Scripts/jquery-1.9.1.min.js" ></script>
+    
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU&coordorder=longlat" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=ru" type="text/javascript"></script>
+    
+    <!--[if lt IE 9]>
+	<script type="text/javascript" src="/Scripts/es5-shim.min.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script type="text/javascript" src="/Scripts/CSS.supports.js"></script>
+    <script type="text/javascript" src="/Content/js/ajaxForms.js"></script>
+    <script type="text/javascript" src="/Content/js/ajaxUpload.js"></script>
+	<script type="text/javascript" src="/Content/js/main.js"></script>
+
+    <asp:ContentPlaceHolder ID="ScriptsContent" runat="server" />
+
+</head>
+<body>
+    <% Html.RenderAction("Registration", "Security"); %>
+    <% Html.RenderPartial("Blocks/TopPanel"); %>
+    <div class="container">
+        <div class="container2">
+            <div class="header">
+                <% Html.RenderPartial("Header"); %>
+                <asp:ContentPlaceHolder ID="SliderContent" runat="server" />
+            </div>
+            <div class="middle widthSite">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <% Html.RenderPartial("Footer"); %> 
+    </div>
+    <% Html.RenderAction("Message", "Home"); %>
+    
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter23648548 = new Ya.Metrika({ id: 23648548,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        trackHash: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/23648548" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47213947-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })(); 
+</script>
+</body>
+</html>

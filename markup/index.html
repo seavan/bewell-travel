@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bewell</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<link rel="shortcut icon" href="./i/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" media="screen,projection" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="./css/ie7.css" />
+	<![endif]-->
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js" ></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="./js/es5-shim.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="./js/CSS.supports.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+<!--popups-->
+	<div class="darkness"></div>
+	<div class="popup popup_signup js-popup js-popup-signup">
+		<div class="popup__table">
+			<div class="popup__table__cell">
+				<div class="popup__content">
+					<div class="popup__close js-popup-close" title="Закрыть">Закрыть</div>
+					<div class="popup__content__in b-content">
+						<h2>Регистрация</h2>
+						
+						<form action="#" class="b-form b-form_signup">
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Имя</span>
+									<input type="text" value="" class="b-form__field b-form__field_error">
+								</label>
+								<div class="b-form__error">Это поле заполнено неверно</div>
+							</div>
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Фамилия</span>
+									<input type="text" value="" class="b-form__field">
+								</label>
+							</div>
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">E-mail</span>
+									<input type="text" value="" class="b-form__field">
+								</label>
+							</div>
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Пароль</span>
+									<input type="p" value="" class="b-form__field">
+								</label>
+							</div>
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Повторите пароль</span>
+									<input type="password" value="" class="b-form__field">
+								</label>
+							</div>
+							<div class="b-form__button">
+								<input type="submit" value="Зарегестрироваться" class="button">
+							</div>
+							<ul class="social">
+								<li class="social__title">Регистрация через соцсети:</li>
+								<li><a href="#" title="facebook">&#228;</a></li>
+								<li><a href="#" title="vkontakte">&#230;</a></li>
+								<li><a href="#" title="odnoklassniki">&#233;</a></li>
+								<li><a href="#" title="googleplus">&#232;</a></li>
+							</ul>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--/popups-->
+<!---->
+<div class="panel-top">
+	<div class="widthSite">
+		<!--не авторизован-->
+		<div class="auth">
+			<div class="panel-top__item auth__signin js-slide-toggle">
+				<span class="auth__signin__door js-slide-toggle-door b-close">Войти</span>
+				<div class="auth__signin__popup js-slide-toggle-content b-close">
+					<div class="auth__signin__popup__in">
+						<form action="#" class="b-form b-form_login">
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Логин</span>
+									<input type="text" value="" class="b-form__field b-form__field_error">
+								</label>
+								<div class="b-form__error">Это поле заполнено неверно</div>
+							</div>
+							<div class="b-form__row">
+								<label class="b-form__inline">
+									<span class="b-form__label">Пароль</span>
+									<input type="password" value="" class="b-form__field">
+								</label>
+							</div>
+							<div class="b-form_login__button">
+								<input type="submit" value="войти" class="button">
+								<label class="b-form__checkbox"><input type="checkbox" value="" checked="checked"><span>Запомнить пароль</span></label>
+							</div>
+							<ul class="social">
+								<li class="social__title">Войти через соцсети:</li>
+								<li><a href="#" title="facebook">&#228;</a></li>
+								<li><a href="#" title="vkontakte">&#230;</a></li>
+								<li><a href="#" title="odnoklassniki">&#233;</a></li>
+								<li><a href="#" title="googleplus">&#232;</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="panel-top__item auth__signup">
+				<span class="auth__signup__door js-popup-signup-door">Зарегестрироваться на сайте</span>
+				<span class="auth__signup__hint"> (После регистрации вы получите возможность получать информацию о последних скидках и акциях)</span>
+			</div>
+		</div>
+		<!--/не авторизован-->
+		<!--авторизован
+		<div class="user-panel">
+			<div class="panel-top__item user-panel__name">Вы вошли как Константинопольский Константин</div>
+			<div class="panel-top__item user-panel__logout"><a href="#" class="user-panel__logout__link">Выйти</a></div>
+			<div class="panel-top__item user-panel__info">
+				<span class="user-panel__info__text">Последние просмотренные отели: «<a href="#">Ривьера</a>», «<a href="#">Неополетано</a>», «<a href="#">Кавказская пленница</a>»</span>
+			</div>
+		</div>
+		авторизован-->
+	</div>
+</div>
+<!---->
+<div class="container">
+	<div class="container2">
+		<!---header-->
+		<div class="header">
+			<div class="b-head widthSite">
+				<a href="#" class="b-head__logo"><img src="./i/head_logo.png" alt="Bewell Medispa&wellnes" /></a>
+				<!---search-->
+				<form class="b-head__search">
+					<div class="b-head__search__table">
+						<div class="b-head__search__table__item title">поиск курорта</div>
+						<div class="b-head__search__table__item b-head__search__table__item_select">
+							<select class="b-head__search__select">
+								<option value="0">что болит?</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class="b-head__search__table__item b-head__search__table__item_select">
+							<select class="b-head__search__select">
+								<option value="0">где лечим?</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class="b-head__search__table__item b-head__search__table__item_button"><input type="submit" value="найти" class="button" /></div>
+					</div>
+				</form>
+				<!---/search-->
+				<!---search-site-->
+				<form class="b-head__search-site">
+					<input type="text" value="" placeholder="поиск по сайту" class="b-head__search-site__input" />
+					<input type="submit" value="Поиск" class="b-head__search-site__button" />
+				</form>
+				<!---/search-site-->
+				<ul class="b-head__menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Карта проезда</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="#" title="facebook">&#228;</a></li>
+					<li><a href="#" title="vkontakte">&#230;</a></li>
+					<li><a href="#" title="odnoklassniki">&#233;</a></li>
+					<li><a href="#" title="googleplus">&#232;</a></li>
+				</ul>
+				<ul class="b-head__links">
+					<li>8 (499) 215-35-35</li>
+					<li><a href="#">info@bewell-travel.ru</a></li>
+					<li class="b-head__links__map"><a href="#">карта сайта </a></li>
+				</ul>
+				<ul class="b-head__lang">
+					<li class="b-head__lang__active">рус</li>
+					<li><a href="#">eng</a></li>
+				</ul>
+			</div>
+			<!---promo-->
+			<div class="b-promo js-promo">
+				<div class="b-promo__grid">
+					<div class="widthSite">
+						<ul class="b-promo__menu">				
+							<li><a href="typical.html">О курортах</a></li>
+							<li><a href="typical.html">Природа лечит</a></li>
+							<li><a href="typical.html">Показания к лечению</a></li>
+							<li><a href="typical.html">Курорты</a></li>
+							<li><a href="typical.html">Советы туристам</a></li>
+							<li><a href="typical.html">Туризм для всех</a></li>
+							<li><a href="typical.html">Библиотека</a></li>
+							<li><a href="typical.html">Welcome to Russia</a></li>
+						</ul>
+						<!---->
+						<div class="b-promo__lenta">
+							<div class="b-promo__lenta__item js-promo-item">
+								<div class="b-promo__lenta__item__anons js-promo-item-anons">
+									<div class="b-promo__lenta__item__anons__title">Это эксперт<br />оздоровительного<br />туризма</div>
+									<div class="b-promo__lenta__item__anons_txt">Национальный туроператор АЛЕАН представляет сервис профессионального подбора оздоровительных туров.</div>
+								</div>
+								<div class="b-promo__lenta__item__pic b-promo__lenta__item__pic_1 js-promo-item-pic"></div>
+							</div>
+							<div class="b-promo__lenta__item js-promo-item">
+								<div class="b-promo__lenta__item__anons js-promo-item-anons">
+									<div class="b-promo__lenta__item__anons__title">Это<br />путеводитель<br />по курортам мира</div>
+									<div class="b-promo__lenta__item__anons_txt">Мы собрали лучшие курорты мира в одном месте.</div>
+								</div>
+								<div class="b-promo__lenta__item__pic b-promo__lenta__item__pic_2 js-promo-item-pic"></div>
+							</div>
+							<div class="b-promo__lenta__item js-promo-item">
+								<div class="b-promo__lenta__item__anons js-promo-item-anons">
+									<div class="b-promo__lenta__item__anons__title">Это<br />индивидуальный<br />подбор курорта</div>
+									<div class="b-promo__lenta__item__anons_txt">Наши врачи подберут персональную программу лечения с высокой гарантией результативности.</div>
+								</div>
+								<div class="b-promo__lenta__item__pic b-promo__lenta__item__pic_3 js-promo-item-pic"></div>
+							</div>
+							<div class="b-promo__lenta__item js-promo-item">
+								<div class="b-promo__lenta__item__anons js-promo-item-anons">
+									<div class="b-promo__lenta__item__anons__title">Это<br />курортная<br />энциклопедия</div>
+									<div class="b-promo__lenta__item__anons_txt">Мы знаем все об уникальных дарах природы и современных медицинских технологиях.</div>
+								</div>
+								<div class="b-promo__lenta__item__pic b-promo__lenta__item__pic_4 js-promo-item-pic"></div>
+							</div>
+						</div>
+						<!--/-->
+						<!---->
+						<div class="b-promo__pager">
+							<div class="b-promo__pager__in">
+								<span title="Назад" class="b-promo__pager__back js-promo-prev">Назад</span>
+								<span class="b-promo__pager__slide">
+									<span title="1" class="js-promo-page">&nbsp;</span>
+									<span title="2" class="js-promo-page">&nbsp;</span>
+									<span title="3" class="js-promo-page">&nbsp;</span>
+									<span title="4" class="js-promo-page">&nbsp;</span>
+								</span>
+								<span title="Вперед" class="b-promo__pager__forward js-promo-next">Вперед</span>
+							</div>
+						</div>
+						<!--/-->
+					</div>
+				</div>
+				<!---->
+				<div class="b-promo__slide-bg js-promo-bgs">
+					<div class="b-promo__slide-bg__item b-promo__slide-bg__item_1 js-promo-bg"></div>
+					<div class="b-promo__slide-bg__item b-promo__slide-bg__item_2 js-promo-bg"></div>
+					<div class="b-promo__slide-bg__item b-promo__slide-bg__item_3 js-promo-bg"></div>
+					<div class="b-promo__slide-bg__item b-promo__slide-bg__item_4 js-promo-bg"></div>
+				</div>
+				<!--/-->
+			</div>
+			<!---/promo-->
+		</div>
+		<!---/header-->
+		<!---middle-->
+		<div class="middle widthSite">
+			<!---->
+			<div class="b-info clearFix">
+				<dl class="b-info__recomend fl_l">
+					<dt>
+						<span class="title">BeWell рекомендует</span>
+					</dt>
+					<dd class="clearFix">
+						<div class="b-info__recomend__item">
+							<a href="#">
+								<img src="./images/pic1.jpg" alt=""/>
+								Ananda SPA Resort 4*
+							</a><br />оцекнка отеля <span>4,9</span>
+						</div>
+						<div class="b-info__recomend__item">
+							<a href="#">
+								<img src="./images/pic1.jpg" alt=""/>
+								Ananda SPA Resort 4*
+							</a><br />оцекнка отеля <span>4,9</span>
+						</div>
+						<div class="b-info__recomend__item">
+							<a href="#">
+								<img src="./images/pic1.jpg" alt=""/>
+								Ananda SPA Resort 4*
+							</a><br />оцекнка отеля <span>4,9</span>
+						</div>
+						<div class="b-info__recomend__item">
+							<a href="#">
+								<img src="./images/pic1.jpg" alt=""/>
+								Ananda SPA Resort 4*
+							</a><br />оцекнка отеля <span>4,9</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="b-info__consultant fl_r">
+					<dt class="title">Виртуальный консультант</dt>
+					<dd>
+						<div class="b-info__consultant__in">
+							<div class="b-info__consultant__left">
+								<img src="./images/avatar.jpg" alt="" />
+								<div class="b-info__consultant__left__status b-info__consultant__left__status_online">online</div>
+							</div>
+							Привет, меня зовут <b>Дарья</b>.<br />
+							Я с удовольствуем отвечу на все интересующие Вас вопросы, помогу выбрать лучший вариант.
+						</div>
+						<form class="b-info__consultant__form">
+							<input type="text" value="" placeholder="задать вопрос..." />
+						</form>
+					</dd>
+				</dl>
+			</div>
+			<!--/-->
+			<!---->
+			<div class="b-info clearFix">
+				<div class="b-info__citate fl_l">
+					<div class="b-info__citate__bg"></div>
+					<div class="b-info__citate__in">
+						<div class="b-info__citate__pic"><img src="./images/pic2.jpg" alt="" /></div>
+						<div class="b-info__citate__text">свою деятельность доктор Бонвиль начал с рекламной брошюры, в первых строках которой в пышных и трескучих фразах расхваливал красоты Анваля</div>
+						<div class="b-info__citate__autor">Ги де Мопассан</div>
+					</div>
+				</div>
+				<dl class="b-info__news fl_l">
+					<dt>
+						<span class="title">что нового</span>
+						<a href="#" class="b-info__news__rss">rss</a>
+					</dt>
+					<dd>
+						<ul class="b-info__news__list">
+							<li>
+								<span class="b-info__news__list__date">03.04</span> Конференции, конгрессы<br />
+								<a href="#">Отчет с конференции «Инновации в медицинских технологиях». Строим медицину будущего!</a>
+							</li>
+							<li>
+								<span class="b-info__news__list__date">02.04</span> Новости туризма<br />
+								<a href="#">Онищенко рекомендует не ездить в Шанхай из-за птичьего гриппа.</a>
+							</li>
+							<li>
+								<span class="b-info__news__list__date">02.04</span> Новости медицины<br />
+								<a href="#">незначительный набор веса приводит к старению сердца*</a>
+							</li>
+						</ul>
+						<a href="#">архив новостей</a>
+					</dd>
+				</dl>
+				<dl class="b-info__faq fl_r">
+					<dt>
+						<span class="title">Впопрос/ответ</span>
+						<span class="b-info__faq__link"><a href="#">все вопросы</a> (478)</span>
+					</dt>
+					<dd class="js-faq-lenta">
+						<div class="b-info__faq__arrow b-info__faq__arrow_forward button js-prev " title="Назад"><span>Назад</span></div>
+						<div class="b-info__faq__arrow b-info__faq__arrow_back button js-next" title="Вперед"><span>Вперед</span></div>
+						<div class="b-info__faq__lenta js-lenta">
+							<dl class="b-info__faq__lenta__item js-lenta-item">
+								<dt>Вопрос: 111111, Жилебина Нина Викторовна</dt>
+								<dd>Здравствуйте! Подскажите, пожалуйста, какой санаторий выбрать для детей 10-12 лет с заболеванием почек и желудочно-кишечного тракта (хронический пи,елонефрит и хронический гастрит). Дети с родителями.</dd>
+								<dt>Ответ: 24.08.2006, терапевт, Степаноца Ольга Семеновна</dt>
+								<dd>Светлана Анатольевна! Заболеванием, определяющим выбор, является пиелонефрит, при котором показано питьевое лечение, впрочем, так же как и при хроническом гастрите. Лучшим курортом России в этом случае являются санатории Железноводска на Кавминводах, имеющие «двойной» профиль: лечение заболеваний почек и мочевыводящих путей, а также органов пищеварения. Звоните, и мы поможем Вам подобрать санаторий и купить путевку.</dd>
+							</dl>
+							<dl class="b-info__faq__lenta__item js-lenta-item">
+								<dt>Вопрос: 22222, Жилебина Нина Викторовна</dt>
+								<dd>Здравствуйте! Подскажите, пожалуйста, какой санаторий выбрать для детей 10-12 лет с заболеванием почек и желудочно-кишечного тракта (хронический пи,елонефрит и хронический гастрит). Дети с родителями.</dd>
+								<dt>Ответ: 24.08.2006, терапевт, Степаноца Ольга Семеновна</dt>
+								<dd>Светлана Анатольевна! Заболеванием, определяющим выбор, является пиелонефрит, при котором показано питьевое лечение, впрочем, так же как и при хроническом гастрите. Лучшим курортом России в этом случае являются санатории Железноводска на Кавминводах, имеющие «двойной» профиль: лечение заболеваний почек и мочевыводящих путей, а также органов пищеварения. Звоните, и мы поможем Вам подобрать санаторий и купить путевку.</dd>
+							</dl>
+							<dl class="b-info__faq__lenta__item js-lenta-item">
+								<dt>Вопрос: 333333, Жилебина Нина Викторовна</dt>
+								<dd>Здравствуйте! Подскажите, пожалуйста, какой санаторий выбрать для детей 10-12 лет с заболеванием почек и желудочно-кишечного тракта (хронический пи,елонефрит и хронический гастрит). Дети с родителями.</dd>
+								<dt>Ответ: 24.08.2006, терапевт, Степаноца Ольга Семеновна</dt>
+								<dd>Светлана Анатольевна! Заболеванием, определяющим выбор, является пиелонефрит, при котором показано питьевое лечение, впрочем, так же как и при хроническом гастрите. Лучшим курортом России в этом случае являются санатории Железноводска на Кавминводах, имеющие «двойной» профиль: лечение заболеваний почек и мочевыводящих путей, а также органов пищеварения. Звоните, и мы поможем Вам подобрать санаторий и купить путевку.</dd>
+							</dl>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<!--/-->
+		</div>
+		<!---/middle-->
+	</div>
+</div>
+<!---footer-->
+<div class="footer">
+	<!---->
+	<div class="b-map js-slide-toggle">
+		<div class="b-map__door">
+			<div class="widthSite">
+				<span class="b-map__door__in js-slide-toggle-door">
+					<i class="b-arrow b-map__door__arrow"></i>
+					<span>карта сайта</span>
+				</span>
+			</div>
+		</div>
+		<div class="b-map__content js-slide-toggle-content">
+			<div class="b-map__content__bottom">
+				<div class="widthSite">
+					<!--b-map__content-->
+					<div class="b-map__content__in clearFix">
+						<div class="b-map__content__col fl_l">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">О курортах</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Что такое курорт</a></li>
+										<li><a href="#">Спа</a></li>
+										<li><a href="#">Велнес</a></li>
+										<li><a href="#">Какие бывают курорты</a></li>
+										<li><a href="#">Курорт у вас дома</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Курорты</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Страны</a></li>
+										<li><a href="#">Регионы</a></li>
+										<li><a href="#">Курорты</a></li>
+										<li><a href="#">Отели /санатории</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Медицинский туризм</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Check-up</a></li>
+										<li><a href="#">Ангиология </a></li>
+										<li><a href="#">Кардиология</a></li>
+										<li><a href="#">Травматология</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Медицина туризма</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Check-up</a></li>
+										<li><a href="#">Ангиология </a></li>
+										<li><a href="#">Кардиология</a></li>
+										<li><a href="#">Травматология</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="b-map__content__col b-map__content__col_center fl_l">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Природа лечит</a></dt>
+								<dd class="clearFix">
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Климатотерапия</a></li>
+											<li><a href="#">Аэротерапия</a></li>
+											<li><a href="#">Гелиотерапия</a></li>
+											<li><a href="#">Спелеотерапия, лечебные климатические камеры</a></li>
+											<li><a href="#">Ландшафтотерапия, влияние ландшафта на человека</a></li>
+											<li><a href="#">Терренкур </a></li>
+											<li><a href="#">Талассотерапия </a></li>
+											<li><a href="#">Талассотерапия в Греции</a></li>
+											<li><a href="#">Талассотерапия в Англии</a></li>
+											<li><a href="#">Кумыс, кумысолечение</a></li>
+											<li><a href="#">Лечебные грязи</a></li>
+											<li><a href="#">Минеральные воды</a></li>
+											<li><a href="#">Питьевые воды</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Бальнеотерапия</a></li>
+											<li><a href="#">Гидротерапия</a></li>
+											<li><a href="#">Физиотерапия</a></li>
+											<li><a href="#">Массаж</a></li>
+											<li><a href="#">Классический массаж </a></li>
+											<li><a href="#">Спортивный массаж</a></li>
+											<li><a href="#">Лимфодренажный массаж</a></li>
+											<li><a href="#">Мануальная терапия </a></li>
+											<li><a href="#">Остеопатия</a></li>
+											<li><a href="#">Китайская медицина: иглоукалывание, рефлексотерапия </a></li>
+											<li><a href="#">Гирудотерапия</a></li>
+											<li><a href="#">Ароматерапия, аэрофитотерапия</a></li>
+											<li><a href="#">Фитотерапия, лечение травами</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_l">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">Термотерапия, парафинотерапия, озокеритотерапия </a></li>
+											<li><a href="#">Баня, сауна, хамам</a></li>
+											<li><a href="#">Русская баня</a></li>
+											<li><a href="#">Сауна</a></li>
+											<li><a href="#">Хамам</a></li>
+											<li><a href="#">Лечебное питание, диеты по Певзнеру</a></li> 
+											<li><a href="#">стол №1</a></li>
+											<li><a href="#">стол №2</a></li>
+											<li><a href="#">Стол №15 (всего ~20 столов)</a></li>
+											<li><a href="#">ЛФК (Лечебная физическая культура)</a></li>
+											<li><a href="#">Механотерапия</a></li>
+											<li><a href="#">Иппотерапия</a></li>
+											<li><a href="#">Аюрведа</a></li>
+											<li><a href="#">Детокс, очищение</a></li>
+										</ul>
+									</div>
+									<div class="b-map__content__col fl_r">
+										<ul class="b-map__content__item__list">
+											<li><a href="#">ЭРЛ, «очищение по левину» </a></li>
+											<li><a href="#">Озонотерапия</a></li>
+											<li><a href="#">Инновационные технологии курортной медицины</a></li>
+											<li><a href="#">Гипербарическая оксигенация в санаториях России</a></li>
+											<li><a href="#">Нормобарическая гипокситерапия — «Горный воздух» в санаториях России</a></li>
+											<li><a href="#">Криотерапия в санаториях России</a></li>
+											<li><a href="#">Озонотерапия в санаториях России</a></li>
+											<li><a href="#">Диализные центры в санаториях России и на курортах мира</a></li>
+											<li><a href="#">Эндоскопическая хирургия в санаториях России</a></li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<div class="b-important b-map__content__info">Наш сайт создан <i>исключительно для информации</i> и не может заменить личной консультации врача.</div>
+						</div>
+						<div class="b-map__content__col fl_r">
+							<dl class="b-map__content__item">
+								<dt class="title"><a href="#">Что лечат на курортах</a></dt>
+								<dd>
+									<ul class="b-map__content__item__list">
+										<li><a href="#">Системы кровообращения</a></li>
+										<li><a href="#">Органы пищеварения</a></li>
+										<li><a href="#">Органы дыхания</a></li>
+										<li><a href="#">Костно-мышечная система</a></li>
+										<li><a href="#">Нервная система</a></li>
+										<li><a href="#">Болезни кожи</a></li>
+										<li><a href="#">Гинекология</a></li>
+										<li><a href="#">Урология</a></li>
+										<li><a href="#">Эндокринная системы</a></li>
+										<li><a href="#">Болезни крови</a></li>
+										<li><a href="#">Глазные болезни</a></li>
+										<li><a href="#">Онкология</a></li>
+										<li><a href="#">Оздоровление беременных</a></li>
+										<li><a href="#">Лечение в санатории детей</a></li>
+										<li><a href="#">Снижения веса и коррекция фигуры</a></li>
+										<li><a href="#">Косметология</a></li>
+										<li><a href="#">Стоматологический туризм </a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!--/b-map__content-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/-->
+	<div class="b-foot">
+		<div class="widthSite">
+			<div class="b-foot__copy">
+				<p class="footer__select__text">&copy;&nbsp;Bewell 2013</p>
+				<p>Все права на материалы, размещенные на сайте, охраняются в соответствии с законодательством РФ и международным правом, в том числе, об авторском праве и смежных правах.</p>
+			</div>
+			<div class="b-foot__contact">
+				<div class="b-foot__contact__item">звоните<br /><span class="footer__select__text">8 (499) 215-35-35</span></div>
+				<div class="b-foot__contact__item">пишите<br /><a href="mailto:info@bewell-travel.ru">info@bewell-travel.ru</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---/footer-->
+</body>
+</html>

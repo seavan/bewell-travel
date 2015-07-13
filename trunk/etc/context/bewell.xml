@@ -1,0 +1,2189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimpleOperationContext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <m_Protos>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>changelog</Name>
+      <Backend>changelog</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>changeid</Name>
+          <Backend>changeid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>folder</Name>
+          <Backend>folder</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>scriptnumber</Name>
+          <Backend>scriptnumber</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>scriptname</Name>
+          <Backend>scriptname</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>startdate</Name>
+          <Backend>startdate</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>completedate</Name>
+          <Backend>completedate</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>appliedby</Name>
+          <Backend>appliedby</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>scriptstatus</Name>
+          <Backend>scriptstatus</Backend>
+          <Type>Field</Type>
+          <FieldType>ftByte</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>scriptoutput</Name>
+          <Backend>scriptoutput</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>citations</Name>
+      <Backend>citations</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>author</Name>
+          <Backend>author</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>text</Name>
+          <Backend>text</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>picture</Name>
+          <Backend>picture</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>properties</Name>
+      <Backend>properties</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>category_id</Name>
+          <Backend>category_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>genders</Name>
+      <Backend>genders</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>deseases</Name>
+      <Backend>deseases</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>icd_code</Name>
+          <Backend>icd_code</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>international_title</Name>
+          <Backend>international_title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>profile_id</Name>
+          <Backend>profile_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>territory_categories</Name>
+      <Backend>territory_categories</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>countries</Name>
+      <Backend>countries</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>territory_id</Name>
+          <Backend>territory_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>health_factors</Name>
+          <Backend>health_factors</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>regions</Name>
+      <Backend>regions</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>territory_id</Name>
+          <Backend>territory_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>health_factors</Name>
+          <Backend>health_factors</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>entity_fields</Name>
+      <Backend>entity_fields</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>fieldsets</Name>
+          <Backend>fieldsets</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>announce_order</Name>
+          <Backend>announce_order</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_in_announce</Name>
+          <Backend>show_in_announce</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>controller</Name>
+          <Backend>controller</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>action</Name>
+          <Backend>action</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>fieldset_fields_order</Name>
+      <Backend>fieldset_fields_order</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>fieldset_id</Name>
+          <Backend>fieldset_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>field_id</Name>
+          <Backend>field_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>order_number</Name>
+          <Backend>order_number</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>resort_zones</Name>
+      <Backend>resort_zones</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>territory_id</Name>
+          <Backend>territory_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>health_factors</Name>
+          <Backend>health_factors</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>treatment_options</Name>
+          <Backend>treatment_options</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>news_categories</Name>
+      <Backend>news_categories</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>pages_files</Name>
+      <Backend>pages_files</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>file_name</Name>
+          <Backend>file_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>publish_date</Name>
+          <Backend>publish_date</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>uid</Name>
+          <Backend>uid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>extension</Name>
+          <Backend>extension</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>user_id</Name>
+          <Backend>user_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>page_id</Name>
+          <Backend>page_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>dictionary</Name>
+      <Backend>dictionary</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>word</Name>
+          <Backend>word</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>translate</Name>
+          <Backend>translate</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>explanation</Name>
+          <Backend>explanation</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="true" CustomDataServiceDelete="false" CustomDataServiceUpdate="true" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>news</Name>
+      <Backend>news</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>category_id</Name>
+          <Backend>category_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>announce</Name>
+          <Backend>announce</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>text</Name>
+          <Backend>text</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>publish_date</Name>
+          <Backend>publish_date</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_published</Name>
+          <Backend>is_published</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>preview</Name>
+          <Backend>preview</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>territories</Name>
+      <Backend>territories</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>category_id</Name>
+          <Backend>category_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>nested_category_id</Name>
+          <Backend>nested_category_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>item_order</Name>
+          <Backend>item_order</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>in_search</Name>
+          <Backend>in_search</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>map_key</Name>
+          <Backend>map_key</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>accounts_sna</Name>
+      <Backend>accounts_sna</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>email</Name>
+          <Backend>email</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>facebook_id</Name>
+          <Backend>facebook_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>vk_id</Name>
+          <Backend>vk_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>google_id</Name>
+          <Backend>google_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>odnoklassniki_id</Name>
+          <Backend>odnoklassniki_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>questions</Name>
+      <Backend>questions</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>account_id</Name>
+          <Backend>account_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>ask_date</Name>
+          <Backend>ask_date</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>asking_user_name</Name>
+          <Backend>asking_user_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>asking_user_email</Name>
+          <Backend>asking_user_email</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>question</Name>
+          <Backend>question</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>replier_account_id</Name>
+          <Backend>replier_account_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>reply_text</Name>
+          <Backend>reply_text</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>accounts</Name>
+      <Backend>accounts</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>email</Name>
+          <Backend>email</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>firstname</Name>
+          <Backend>firstname</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>lastname</Name>
+          <Backend>lastname</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>secondname</Name>
+          <Backend>secondname</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>role_id</Name>
+          <Backend>role_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>post</Name>
+          <Backend>post</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>created</Name>
+          <Backend>created</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>password</Name>
+          <Backend>password</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>salt</Name>
+          <Backend>salt</Backend>
+          <Type>Field</Type>
+          <FieldType>ftGuid</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>activation_guid</Name>
+          <Backend>activation_guid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftGuid</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>lastlogin</Name>
+          <Backend>lastlogin</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>rememberpass_guid</Name>
+          <Backend>rememberpass_guid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftGuid</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>pages</Name>
+      <Backend>pages</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>publish_date</Name>
+          <Backend>publish_date</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>html</Name>
+          <Backend>html</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>alias</Name>
+          <Backend>alias</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>seo_metadata</Name>
+      <Backend>seo_metadata</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>entity_id</Name>
+          <Backend>entity_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>url</Name>
+          <Backend>url</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>keywords</Name>
+          <Backend>keywords</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>description</Name>
+          <Backend>description</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>fieldsets</Name>
+      <Backend>fieldsets</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>url</Name>
+          <Backend>url</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>order_number</Name>
+          <Backend>order_number</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_gallery</Name>
+          <Backend>show_gallery</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_map</Name>
+          <Backend>show_map</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_in_anounce</Name>
+          <Backend>show_in_anounce</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>comments</Name>
+      <Backend>comments</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>left_key</Name>
+          <Backend>left_key</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>right_key</Name>
+          <Backend>right_key</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>level</Name>
+          <Backend>level</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>delete</Name>
+          <Backend>delete</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>create_date</Name>
+          <Backend>create_date</Backend>
+          <Type>Field</Type>
+          <FieldType>ftDateTime</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>account_id</Name>
+          <Backend>account_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>text</Name>
+          <Backend>text</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>entity_id</Name>
+          <Backend>entity_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>entity_photos</Name>
+      <Backend>entity_photos</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>entity_id</Name>
+          <Backend>entity_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>guid</Name>
+          <Backend>guid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>original</Name>
+          <Backend>original</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>thumbnail_small</Name>
+          <Backend>thumbnail_small</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>thumbnail_mid</Name>
+          <Backend>thumbnail_mid</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>thumbnail_large</Name>
+          <Backend>thumbnail_large</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_main</Name>
+          <Backend>is_main</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>order_number</Name>
+          <Backend>order_number</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>field_values</Name>
+      <Backend>field_values</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>entity_id</Name>
+          <Backend>entity_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>field_id</Name>
+          <Backend>field_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>field_value</Name>
+          <Backend>field_value</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>prices</Name>
+      <Backend>prices</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>entity_id</Name>
+          <Backend>entity_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>proto_name</Name>
+          <Backend>proto_name</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>month</Name>
+          <Backend>month</Backend>
+          <Type>Field</Type>
+          <FieldType>ftByte</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>price</Name>
+          <Backend>price</Backend>
+          <Type>Field</Type>
+          <FieldType>ftFloat</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>comment</Name>
+          <Backend>comment</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>property_categories</Name>
+      <Backend>property_categories</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_in_search</Name>
+          <Backend>show_in_search</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>order_number</Name>
+          <Backend>order_number</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>cure_profiles</Name>
+      <Backend>cure_profiles</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>gender_id</Name>
+          <Backend>gender_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>css_class</Name>
+          <Backend>css_class</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>item_order</Name>
+          <Backend>item_order</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>hotel_classes</Name>
+      <Backend>hotel_classes</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>stars</Name>
+          <Backend>stars</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>hotels</Name>
+      <Backend>hotels</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>stars</Name>
+          <Backend>stars</Backend>
+          <Type>Field</Type>
+          <FieldType>ftInt</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>class_id</Name>
+          <Backend>class_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>coordinates</Name>
+          <Backend>coordinates</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_recomended_main_page</Name>
+          <Backend>is_recomended_main_page</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_recomended</Name>
+          <Backend>is_recomended</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>deseases</Name>
+          <Backend>deseases</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>treatment_options</Name>
+          <Backend>treatment_options</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>properties</Name>
+          <Backend>properties</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>resort_id</Name>
+          <Backend>resort_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>noyayesgo</Name>
+          <Backend>noyayesgo</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_published</Name>
+          <Backend>is_published</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>resorts</Name>
+      <Backend>resorts</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>territory_id</Name>
+          <Backend>territory_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>cure_profiles</Name>
+          <Backend>cure_profiles</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>ad_cure_profiles</Name>
+          <Backend>ad_cure_profiles</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>health_factors</Name>
+          <Backend>health_factors</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_recomended</Name>
+          <Backend>is_recomended</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>coordinates</Name>
+          <Backend>coordinates</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>noyayesgo</Name>
+          <Backend>noyayesgo</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+        <FieldDescription>
+          <Name>is_published</Name>
+          <Backend>is_published</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+          <GuiValidators />
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>health_factors</Name>
+      <Backend>health_factors</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_on_sitemap</Name>
+          <Backend>show_on_sitemap</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+    <ProtoDescription CustomDataServiceInsert="false" CustomDataServiceDelete="false" CustomDataServiceUpdate="false" CustomDataServiceCreate="false" SphinxSearchable="false">
+      <Name>treatment_options</Name>
+      <Backend>treatment_options</Backend>
+      <Type>Proto</Type>
+      <SkipLoad>false</SkipLoad>
+      <Fields>
+        <FieldDescription>
+          <Name>id</Name>
+          <Backend>id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>title</Name>
+          <Backend>title</Backend>
+          <Type>Field</Type>
+          <FieldType>ftString</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>parent_id</Name>
+          <Backend>parent_id</Backend>
+          <Type>Field</Type>
+          <FieldType>ftLong</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+        <FieldDescription>
+          <Name>show_on_sitemap</Name>
+          <Backend>show_on_sitemap</Backend>
+          <Type>Field</Type>
+          <FieldType>ftBool</FieldType>
+          <MaxLength>0</MaxLength>
+        </FieldDescription>
+      </Fields>
+      <Aspects />
+    </ProtoDescription>
+  </m_Protos>
+  <m_Views />
+  <m_Aggregations>
+    <AggregationDescription>
+      <Name>sub_territories</Name>
+      <BeautifulName>SubTerritories</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>territories</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>territories</ForeignElementName>
+      <ForeignKey>parent_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>cure_profiles_deseases</Name>
+      <BeautifulName>Deseases</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>cure_profiles</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>deseases</ForeignElementName>
+      <ForeignKey>profile_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>category_territories</Name>
+      <BeautifulName>Territories</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>territory_categories</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>territories</ForeignElementName>
+      <ForeignKey>category_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>news_categories_news</Name>
+      <BeautifulName>News</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>news_categories</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>news</ForeignElementName>
+      <ForeignKey>category_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>fv_entity_fields</Name>
+      <BeautifulName>FieldValues</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>entity_fields</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>field_values</ForeignElementName>
+      <ForeignKey>field_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>sub_health_factors</Name>
+      <BeautifulName>SubHealthFactors</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>health_factors</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>health_factors</ForeignElementName>
+      <ForeignKey>parent_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>territory_resorts</Name>
+      <BeautifulName>Resorts</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>territories</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>resorts</ForeignElementName>
+      <ForeignKey>territory_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>sub_treatments</Name>
+      <BeautifulName>SubTreatmentOptions</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>treatment_options</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>treatment_options</ForeignElementName>
+      <ForeignKey>parent_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>category_properties</Name>
+      <BeautifulName>Properties</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>property_categories</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>properties</ForeignElementName>
+      <ForeignKey>category_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>u_comments</Name>
+      <BeautifulName>Comments</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>accounts</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>comments</ForeignElementName>
+      <ForeignKey>account_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>cn_child_comments</Name>
+      <BeautifulName>ChildComments</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>comments</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>comments</ForeignElementName>
+      <ForeignKey>parent_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>account_questions</Name>
+      <BeautifulName>Questions</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>accounts</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>questions</ForeignElementName>
+      <ForeignKey>account_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>account_answers</Name>
+      <BeautifulName>Answers</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>accounts</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>questions</ForeignElementName>
+      <ForeignKey>replier_account_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>sub_pages</Name>
+      <BeautifulName>SubPages</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>pages</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>pages</ForeignElementName>
+      <ForeignKey>parent_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>resort_hotels</Name>
+      <BeautifulName>Hotels</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>resorts</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>hotels</ForeignElementName>
+      <ForeignKey>resort_id</ForeignKey>
+    </AggregationDescription>
+    <AggregationDescription>
+      <Name>class_hotels</Name>
+      <BeautifulName>Hotels</BeautifulName>
+      <Modifier>private</Modifier>
+      <Type>Aggregation</Type>
+      <ThisElementType>Proto</ThisElementType>
+      <ThisElementName>hotel_classes</ThisElementName>
+      <ForeignElementType>Proto</ForeignElementType>
+      <ForeignElementName>hotels</ForeignElementName>
+      <ForeignKey>class_id</ForeignKey>
+    </AggregationDescription>
+  </m_Aggregations>
+  <m_Compositions />
+  <m_InlineCompositions>
+    <InlineCompositionDescription>
+      <Name>HotelDeseases</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>hotels</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>deseases</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>hotels</MediatorBackend>
+      <MediatorKeyName>deseases</MediatorKeyName>
+      <FirstElementInterface>hotels</FirstElementInterface>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>HotelTreatments</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>hotels</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>treatment_options</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>hotels</MediatorBackend>
+      <MediatorKeyName>treatment_options</MediatorKeyName>
+      <FirstElementInterface>hotels</FirstElementInterface>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>HotelProperties</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>hotels</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>properties</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>hotels</MediatorBackend>
+      <MediatorKeyName>properties</MediatorKeyName>
+      <FirstElementInterface>hotels</FirstElementInterface>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>ResortCureProfiles</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>resorts</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>cure_profiles</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>resorts</MediatorBackend>
+      <MediatorKeyName>cure_profiles</MediatorKeyName>
+      <FirstElementInterface>resorts</FirstElementInterface>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>ResortAdditionalCureProfiles</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>resorts</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>cure_profiles</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>resorts</MediatorBackend>
+      <MediatorKeyName>ad_cure_profiles</MediatorKeyName>
+      <FirstElementInterface>resorts</FirstElementInterface>
+      <FirstElementPostfix>_ad</FirstElementPostfix>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>ResortHealthFactors</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>resorts</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>health_factors</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>resorts</MediatorBackend>
+      <MediatorKeyName>health_factors</MediatorKeyName>
+      <FirstElementInterface>resorts</FirstElementInterface>
+    </InlineCompositionDescription>
+    <InlineCompositionDescription>
+      <Name>EntityFieldFieldsets</Name>
+      <Type>InlineComposition</Type>
+      <FirstElementName>entity_fields</FirstElementName>
+      <FirstElementType>Proto</FirstElementType>
+      <SecondElementName>fieldsets</SecondElementName>
+      <SecondElementType>Proto</SecondElementType>
+      <Reversed>false</Reversed>
+      <MediatorBackend>entity_fields</MediatorBackend>
+      <MediatorKeyName>fieldsets</MediatorKeyName>
+      <FirstElementInterface>entity_fields</FirstElementInterface>
+    </InlineCompositionDescription>
+  </m_InlineCompositions>
+  <m_Associations />
+  <m_StoredProcedures />
+  <m_Controllers />
+  <m_Interfaces />
+</SimpleOperationContext>
